@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CountrieCell" id="en6-Qp-fTB" customClass="CountriesCell" customModule="TravelWorld" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="174" height="152"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="174" height="152"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y0E-as-fhG">
+                        <rect key="frame" x="0.0" y="0.0" width="174" height="152"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud-cell" translatesAutoresizingMaskIntoConstraints="NO" id="XYm-pV-kqC">
+                                <rect key="frame" x="3" y="2" width="168" height="138"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xK7-BB-gdH">
+                                <rect key="frame" x="47" y="24" width="80" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="xK7-BB-gdH" secondAttribute="height" multiplier="80:57" id="Ha8-sn-9eq"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brasil" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="v4A-h7-NDj">
+                                <rect key="frame" x="16" y="81" width="142" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="2zt-QS-3vC"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="Y5h-sY-2gL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checked" translatesAutoresizingMaskIntoConstraints="NO" id="I4I-w5-rZW">
+                                <rect key="frame" x="138" y="53" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="21s-Dc-KvF"/>
+                                    <constraint firstAttribute="height" constant="20" id="rom-vQ-XQc"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="v4A-h7-NDj" secondAttribute="trailing" constant="16" id="8HG-On-qNa"/>
+                            <constraint firstItem="xK7-BB-gdH" firstAttribute="top" secondItem="y0E-as-fhG" secondAttribute="top" constant="24" id="9R2-39-5Os"/>
+                            <constraint firstItem="xK7-BB-gdH" firstAttribute="leading" secondItem="y0E-as-fhG" secondAttribute="leading" constant="47" id="9kc-ac-Y06"/>
+                            <constraint firstItem="I4I-w5-rZW" firstAttribute="top" secondItem="y0E-as-fhG" secondAttribute="top" constant="53" id="C4V-K5-Wss"/>
+                            <constraint firstItem="v4A-h7-NDj" firstAttribute="leading" secondItem="y0E-as-fhG" secondAttribute="leading" constant="16" id="UXG-oB-y4W"/>
+                            <constraint firstAttribute="trailing" secondItem="XYm-pV-kqC" secondAttribute="trailing" constant="3" id="Yyx-4r-r5d"/>
+                            <constraint firstItem="v4A-h7-NDj" firstAttribute="top" secondItem="xK7-BB-gdH" secondAttribute="bottom" id="eSs-Ke-7dr"/>
+                            <constraint firstItem="XYm-pV-kqC" firstAttribute="leading" secondItem="y0E-as-fhG" secondAttribute="leading" constant="3" id="fH6-CA-pBs"/>
+                            <constraint firstItem="XYm-pV-kqC" firstAttribute="top" secondItem="y0E-as-fhG" secondAttribute="top" constant="2" id="jUf-b4-VJh"/>
+                            <constraint firstAttribute="trailing" secondItem="I4I-w5-rZW" secondAttribute="trailing" constant="16" id="rnp-Qn-wa7"/>
+                            <constraint firstAttribute="bottom" secondItem="XYm-pV-kqC" secondAttribute="bottom" constant="12" id="uUF-XL-4dk"/>
+                            <constraint firstItem="xK7-BB-gdH" firstAttribute="centerX" secondItem="y0E-as-fhG" secondAttribute="centerX" id="y0O-Dh-Xgh"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="y0E-as-fhG" firstAttribute="leading" secondItem="en6-Qp-fTB" secondAttribute="leading" id="5Jg-9n-FNs"/>
+                <constraint firstAttribute="bottom" secondItem="y0E-as-fhG" secondAttribute="bottom" id="Xqz-D0-gv0"/>
+                <constraint firstAttribute="trailing" secondItem="y0E-as-fhG" secondAttribute="trailing" id="pbE-sT-Kaf"/>
+                <constraint firstItem="y0E-as-fhG" firstAttribute="top" secondItem="en6-Qp-fTB" secondAttribute="top" id="rCP-db-MhO"/>
+            </constraints>
+            <size key="customSize" width="128" height="117"/>
+            <connections>
+                <outlet property="checkedIcon" destination="I4I-w5-rZW" id="GSs-82-9xh"/>
+                <outlet property="containerView" destination="y0E-as-fhG" id="E4s-j7-uo9"/>
+                <outlet property="countryImageView" destination="xK7-BB-gdH" id="Eiy-ZZ-cNj"/>
+                <outlet property="shortnameLabel" destination="v4A-h7-NDj" id="Mbp-sN-5yk"/>
+            </connections>
+            <point key="canvasLocation" x="-105" y="13"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="checked" width="48" height="48"/>
+        <image name="cloud-cell" width="300" height="255"/>
+    </resources>
+</document>
